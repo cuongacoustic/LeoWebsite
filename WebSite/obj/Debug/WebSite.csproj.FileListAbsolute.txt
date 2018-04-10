@@ -305,6 +305,7 @@ F:\Project4_LeoShop\WebSite\bin\Microsoft.AI.Web.xml
 F:\Project4_LeoShop\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference.cache
 F:\Project4_LeoShop\WebSite\obj\Debug\WebSite.dll
 F:\Project4_LeoShop\WebSite\obj\Debug\WebSite.pdb
+<<<<<<< HEAD
 E:\BitBucket\LeoWebsite\WebSite\bin\ApplicationInsights.config
 E:\BitBucket\LeoWebsite\WebSite\bin\roslyn\csc.exe
 E:\BitBucket\LeoWebsite\WebSite\bin\roslyn\csc.exe.config
@@ -387,3 +388,5 @@ E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WebForms.dll
 E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WinForms.DLL
 E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.SqlServer.Types.dll
 E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WebForms.xml
+=======
+>>>>>>> parent of b15daf9... Delete Admin in LeoWenSite
