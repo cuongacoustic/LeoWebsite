@@ -1,0 +1,25 @@
+﻿
+<table class="table table-bordered">
+    <tr></tr>
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Date Order</th>
+            <th>Product</th>
+            <th>Payment</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.list)
+        {
+            <tr>
+                <td>@item.ProName</td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+

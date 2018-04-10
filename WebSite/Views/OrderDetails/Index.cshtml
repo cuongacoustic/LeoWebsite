@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebSite.Models.OrderDetail>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>History orders</h2>
+
+@*<td>
+    @Html.DisplayFor(modelItem => item.Order.Customer.FullName)
+</td>*@
+
+<table class="table">
+    <tr>
+        <th>
+           Product Name
+        </th>
+        <th>
+            Date Order
+        </th>
+        <th>
+            Quantities
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Totals
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product.ProName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+        </tr>
+    }
+
+</table>

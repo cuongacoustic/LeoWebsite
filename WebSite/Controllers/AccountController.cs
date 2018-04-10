@@ -48,23 +48,13 @@ namespace WebSite.Controllers
                         //luu hien thi ten tren web
                         Session["userName"] = user.CusName.ToString();
                         Session["fullName"] = user.FullName.ToString();
+                        
                         return Redirect(lg.uri);
-
-                      
-                        //return Redirect("JavaScript: history.go(-1)");
-
-
-
-                    }
-                    else if (admin != null)
-                    {
-                        Session["userName"] = admin.username.ToString();
-                        Session["userID"] = admin.id;
-                        return RedirectToAction("AdminPage", "Home");
                     }
                     else
                     {
-                        ModelState.AddModelError("", "Username or Password is wrong!");
+                        ViewBag.Error = "Username or Password is wrong!";
+                        //ModelState.AddModelError("", "Username or Password is wrong!");
                     }
                 }
             }

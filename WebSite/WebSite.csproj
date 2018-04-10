@@ -56,6 +56,23 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Reporting.WinForms.v11.1.0.0.0\lib\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
     </Reference>
@@ -157,16 +174,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminCategoriesController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\AdminCustomersController.cs" />
-    <Compile Include="Controllers\AdminFeedBackController.cs" />
-    <Compile Include="Controllers\AdminOrdersController.cs" />
-    <Compile Include="Controllers\AdminProductsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\FeedBacksController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderDetailsController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
@@ -503,47 +515,26 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shared\_AdminLayOut.cshtml" />
-    <Content Include="Views\Product\Brand.cshtml" />
-    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Home\Product\Brand.cshtml" />
+    <Content Include="Views\Home\Product\Details.cshtml" />
     <Content Include="Views\Account\MyAccount.cshtml" />
     <Content Include="Views\Order\ViewCart.cshtml" />
     <Content Include="Views\Order\Thanks.cshtml" />
-    <Content Include="Views\Home\AdminPage.cshtml" />
-    <Content Include="Views\Admin\ViewBrand.cshtml" />
-    <Content Include="Views\Admin\DetailsBrand.cshtml" />
-    <Content Include="Views\Admin\EditBrand.cshtml" />
-    <Content Include="Views\Admin\DeleteBrand.cshtml" />
     <Content Include="Views\Customers\ViewDetailsCustomer.cshtml" />
-    <Content Include="Views\Admin\CreateBrand.cshtml" />
-    <Content Include="Views\AdminCustomers\Delete.cshtml" />
-    <Content Include="Views\AdminCustomers\Details.cshtml" />
-    <Content Include="Views\AdminCustomers\Index.cshtml" />
-    <Content Include="Views\AdminOrders\Delete.cshtml" />
-    <Content Include="Views\AdminOrders\Details.cshtml" />
-    <Content Include="Views\AdminOrders\Index.cshtml" />
     <Content Include="Views\Customers\EditCustomer.cshtml" />
     <Content Include="Views\Customers\ThanksEdit.cshtml" />
-    <Content Include="Views\AdminProducts\Create.cshtml" />
-    <Content Include="Views\AdminProducts\Delete.cshtml" />
-    <Content Include="Views\AdminProducts\Details.cshtml" />
-    <Content Include="Views\AdminProducts\Edit.cshtml" />
-    <Content Include="Views\AdminProducts\Index.cshtml" />
     <Content Include="Views\FeedBacks\Create.cshtml" />
     <Content Include="Views\FeedBacks\Details.cshtml" />
     <Content Include="Views\FeedBacks\Index.cshtml" />
-    <Content Include="Views\AdminFeedBack\Create.cshtml" />
-    <Content Include="Views\AdminFeedBack\Delete.cshtml" />
-    <Content Include="Views\AdminFeedBack\Details.cshtml" />
-    <Content Include="Views\AdminFeedBack\Edit.cshtml" />
-    <Content Include="Views\AdminFeedBack\Index.cshtml" />
-    <Content Include="Views\AdminCategories\Create.cshtml" />
-    <Content Include="Views\AdminCategories\Delete.cshtml" />
-    <Content Include="Views\AdminCategories\Details.cshtml" />
-    <Content Include="Views\AdminCategories\Edit.cshtml" />
-    <Content Include="Views\AdminCategories\Index.cshtml" />
     <Content Include="Views\Customers\SendMail.cshtml" />
-    <Content Include="Views\Product\Category.cshtml" />
+    <Content Include="Views\Home\Product\Category.cshtml" />
     <Content Include="Views\Search\KetQuaSearch.cshtml" />
+    <Content Include="Views\Order\HistoryOrder.cshtml" />
+    <Content Include="Views\OrderDetails\Create.cshtml" />
+    <Content Include="Views\OrderDetails\Delete.cshtml" />
+    <Content Include="Views\OrderDetails\Details.cshtml" />
+    <Content Include="Views\OrderDetails\Edit.cshtml" />
+    <Content Include="Views\OrderDetails\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

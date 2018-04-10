@@ -381,3 +381,9 @@ E:\BitBucket\LeoWebsite\WebSite\obj\Debug\WebSite.csprojResolveAssemblyReference
 E:\BitBucket\LeoWebsite\WebSite\obj\Debug\WebSite.csproj.CoreCompileInputs.cache
 E:\BitBucket\LeoWebsite\WebSite\obj\Debug\WebSite.dll
 E:\BitBucket\LeoWebsite\WebSite\obj\Debug\WebSite.pdb
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.Common.dll
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WebForms.dll
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WinForms.DLL
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.SqlServer.Types.dll
+E:\BitBucket\LeoWebsite\WebSite\bin\Microsoft.ReportViewer.WebForms.xml
